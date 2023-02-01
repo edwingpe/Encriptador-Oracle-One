@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypter</title>
+    <script src="https://kit.fontawesome.com/68221f4ab0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+</head>
+<body>
+    <section class="grid-principal">
+        <header>
+            <nav>
+                <img src="/assets/img/alura_logo.svg" alt="Logo Alura Latam" class="logo">
+                <ul>
+                    <li><a href="http://www.linkedin.com/in/edwin-moises-perez-machado" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x"></i></a></li>
+                    <li><a href="https://github.com/edwingpe" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a></li>
+                </ul>
+            </nav>   
+        </header>
+
+        <div class="title-area">
+            <p class="title">the<br><span>EncryptText</span><br>website</p>
+            <div class="info">
+                <h1>code</h1>
+                <ul>
+                    <li>e ⇔ enter</li>
+                    <li>i ⇔ imes</li>
+                    <li>a ⇔ ai</li>
+                    <li>o ⇔ ober</li>
+                    <li>u ⇔ ufat</li>
+                </ul>
+            </div>
+            <img class="img-default" src="./assets/img/meh.png" alt="Meh Girl">
+            <img class="img-result" src="./assets/img/done2.png" alt="Happy Girl">
+            <img class="img-alert" src="./assets/img/what.png" alt="What Girl">
+            <button id="btn-info"><i class="fa-solid fa-info"></i></button>
+        </div>
+
+        <div class="encrypt-area">
+            <textarea name="" id="encrypt-text" cols="60" rows="15" onkeyup="validateMessage(this)" placeholder="Ingresa el texto aqui"></textarea>
+            <div class="btn-encrypt-area">
+                <button id="btn-encriptar"><i class="fa-solid fa-arrow-right"></i></button>
+                <button id="btn-desencriptar"><i class="fa-solid fa-arrow-left"></i></button>
+                <button id="btn-limpiar"><i class="fa-solid fa-rotate"></i></button>
+            </div>
+        </div>
+
+        <div class="result-area">
+            <div class="msg-default">
+                <p>Nada que mostrar.<br><span>¡Comienza a codificar tus mensajes!.</span></p>
+            </div>
+            <div class="msg-result">
+                <textarea name="" id="result-text" cols="60" rows="15" disabled></textarea>
+                <div class="btn-result-area">
+                    <button id="btn-copiar"><i class="fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Desarrollador por edwingpe</p> 
+        </footer>
+    <script src="/assets/javasripts/encrypter.js"></script>
+</body>
+</html>

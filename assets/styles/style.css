@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@100;400;700&display=swap');
+
+/*  font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+:root {
+    --text-font: 'Poppins', sans-serif;
+    --text-light: #FFFFFF;
+    --text-dark: #264653;
+    --border-color: #264653;
+    --btn-color: #E76F51;
+    --shadow-color: #F4A261;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--text-font);
+    background-color: #edede9;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    height: 8vh;
+    color: var(--text-dark);   
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+
+nav img{
+    width: 100px;
+}
+
+nav a {
+    color: var(--text-dark);
+}
+
+.grid-principal {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 10vw 1fr 1fr 10vw;
+    grid-template-rows: auto 1fr 1fr 5vh;
+    justify-content: center;
+    align-content: center;
+    gap: 0rem 1rem;
+    
+}
+
+header {
+    grid-column: 2/4;  
+}
+
+.title-area {
+    position: relative;
+    grid-column: 2/4;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid var(--border-color);
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;     
+}
+
+.info{
+    position: absolute;
+    right: 35%;
+    bottom: 30%;
+    display: flex;
+    flex-direction: column;
+    border: 2px dotted var(--border-color);
+    padding: 5px;
+}
+
+.info ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#btn-info {
+    position: absolute;
+    right: 1%;
+}
+
+.title-area img {
+    width: fit-content;
+    transform: scaleX(-1);
+    position: absolute;
+    right: 5%;
+}
+
+.title-area p {
+    font-weight: 400;
+    font-size: 6vw;
+}
+
+.title-area span {
+    color: var(--text-dark);
+     font-weight: 700;
+     font-size: 7vw;
+ }
+
+.encrypt-area{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-encrypt-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.result-area{
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 16px;
+     
+}
+
+.msg-result{
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.msg-default{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    padding-left: 16px;
+}
+
+.msg-default span {
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--text-dark);
+
+}
+
+footer {
+    grid-column: 1/span 5;
+    background-color: var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-light);  
+}
+
+#encrypt-text, 
+#result-text {
+    /* border: 2px solid var(--border-color); */
+    resize: none;
+}
+
+
+#btn-encriptar,
+#btn-desencriptar,
+#btn-limpiar,
+#btn-copiar,
+#btn-info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    background-color: var(--border-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 10px;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+#btn-encriptar:hover,
+#btn-desencriptar:hover,
+#btn-copiar:hover {
+    background-color: var(--btn-color);
+}
+
+
+
